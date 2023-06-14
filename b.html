@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1> Name </h1>
+
+        <script>
+            let name_data = localStorage.getItem('name')
+            let name = JSON.parse(name_data)
+
+            let h1 = document.querySelector('h1')
+
+            h1.innerHTML = name
+            
+        </script>
+</body>
+</html>

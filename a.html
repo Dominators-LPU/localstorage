@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" placeholder="Enter Name">
+     <button> Submit </button>
+
+     <script>
+         
+         let input = document.querySelector('input');
+         let button = document.querySelector('button');
+
+
+         button.addEventListener('click', display )
+
+
+         function display(){
+              console.log(input.value)
+              // json 
+              let data = JSON.stringify(input.value)
+              // local storage
+            localStorage.setItem('name', data)
+
+         }
+
+     </script>
+</body>
+</html>
+
+
+
